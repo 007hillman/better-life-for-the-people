@@ -7,7 +7,10 @@
     <title>Better Life For All People</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js" defer></script>
+    <script src="./image_display.js" defer></script>
+
     <link rel="stylesheet" href="./index.css">
+
 </head>
 <body>
     <!-- iframe for the hero-->
@@ -240,35 +243,35 @@
     </main>
   </div>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="grid grid-cols-3 gap-5 ml-10">
-    <div class="pic py-16 flex  ">
+  <div class=" grid grid-cols-1 md:grid-cols-3 h-full gap-5 ml-10">
+    <div class="pic py-16 flex  row-start-2 md:row-start-1">
       <div class=" border border-2 border-blue-100 p-5">
         <img src="./images/image3.jpg" alt=""  width="300" height="300">
       </div>
     </div>
-    <div class="bg-white col-span-2">
-      <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div class="text-left">
+    <div class="bg-white grid-rows-2 md:grid-rows-1 md:col-span-2">
+      <div class="mx-auto max-w-7xl row-start-1 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="text-center md:text-left">
           <span class="light-red text-white text-xs font-bold px-2 py-1 uppercase">Who we are</span>
           <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-8">About better life for all </p>
-          <span class="mx-auto mt-5 max-w-xl text-xl text-gray-500">A  Better Life For The people is a nonprofit and social association was created in 2019 in Douala in conformity with the provisions of law N° 90/053 of December 1990 on Freedom of association...</span>
+          <span class="mx-auto mt-5 max-w-xl text-xl text-gray-500 ">A  Better Life For The people is a nonprofit and social association was created in 2019 in Douala in conformity with the provisions of law N° 90/053 of December 1990 on Freedom of association...</span>
 
           <div class="mt-10">
-            <button class="light-red px-8 py-2 text-gray-900">Read more</button>
+            <button class="light-red px-8 py-2 text-white">Read more</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <section class="objectives">
-    <div class="grid grid-cols-3 grid-rows-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-4">
       <div class="row-span-2 col-span-1 px-10">
         <span class="light-red text-white text-xs font-bold px-2 py-1">OBJECTIVES</span>
         <h1 class="mt-1 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">Our objectives are pure and concise</h1>
         <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-extralight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eos velit error voluptate nostrum cupiditate ut officiis doloremque eligendi provident! Ea voluptate consequuntur iure ullam nulla distinctio maiores aut perferendis?</p>
       </div>
-      <div class="col-span-2 row-span-3">
-        <div class=" grid grid-cols-2 gap-4">
+      <div class="md:col-span-2 row-span-3">
+        <div class=" grid grid-cols-1 px-6 md:grid-cols-2 gap-4">
           <div class="flex flex-row  gap-4">
             <span class="stroke-1 text-5xl font-black text-light-red">
               <ion-icon name="medkit-outline" style="--ionicon-stroke-width : 64px;"></ion-icon>
@@ -319,29 +322,101 @@
       </div>
     </div>
   </section>
-  <section class="team-section mt-20">
-    <div class="grid grid-cols-3 gap-4">
+  <section class="team-section mt-20 mx-10">
+    <div class="grid grid-cols-1 md:grid-cols-3  gap-4 ">
 
-      <div class="col-span-2 flex flex-col picture-display">
-        <div class=" grid grid-cols-3"  id="display-zone">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div class="hidden">4</div>
-          <div class="hidden">5</div>
+      <div class="sm:col-span-2 row-span-3 flex flex-col picture-display">
+        <div class="grid grid-cols-1 sm:px-0 sm:grid-cols-3 gap-24 mb-10" id="slide-show">
+          
         </div>
-        <div class=" flex justify-center">
-          <div class=" flex justify-between w-20"  id="circle-zone">
+        <div class=" flex justify-center ">
+          <div class=" flex w-20  justify-between"  id="circle-zone">
           </div>
         </div>
+        <!--this is the palette where I collect slides from-->
+        <div class=" flex flex-row justify-between hidden"  hidden id="display-zone">
+          <div class=" relative team-member">
+
+            <div class=" h-48  relative">
+              <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+            </div>
+            <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
+            <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+        </div>
+        <div class=" relative team-member">
+
+          <div class=" h-48  relative">
+            <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+          </div>
+          <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
+          <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
       </div>
-      <div class="row-span-2 col-span-1 px-10">
+      <div class=" relative team-member">
+
+        <div class=" h-48  relative">
+          <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+        </div>
+        <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
+        <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+    </div>
+    <div class=" relative team-member">
+
+      <div class=" h-48  relative">
+        <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+      </div>
+      <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
+      <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+  </div>
+  <div class=" relative team-member">
+
+    <div class=" h-48  relative">
+      <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+    </div>
+    <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
+    <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+</div>
+        </div>
+        <!--end of slide palette storage-->
+      </div>
+      <div class="row-start-1 col-start-1  col-span-1 px-10 text-center sm:text-left">
         <span class="light-blue text-white text-xs font-bold px-2 py-1 uppercase">meet the team</span>
         <h1 class="mt-1 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">Meet the experts behind this foundation</h1>
         <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-extralight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eos velit error voluptate nostrum cupiditate ut officiis doloremque eligendi provident!</p>
+        <div class="pt-10 ">
+          <button class="light-blue px-8 py-2 text-gray-900 font-semibold capitalize"> Meet all experts</button>
+        </div>
       </div>
     </div>
   </section>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 h-full gap-5 ml-10">
+    <div class="bg-white col-span-2">
+      <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="text-left">
+          <span class="green text-white text-xs font-bold px-2 py-1 uppercase">Join us</span>
+          <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-8">Membership</p>
+          <span class="mx-auto mt-5 max-w-xl text-xl text-gray-500">
+            Member is open to:
+            <ul class="list-disc">
+              <li>Every person who has passion and concern for the poor and needy</li>
+              <li>People who are ready to promote the objectives of the association</li>
+              <li>Individuals, group or organizations with same vision as that of the association </li>
+            </ul>
+          </span>
+
+          <div class="mt-10">
+            <button class="green px-8 py-2 text-gray-900">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pic py-16 flex  ">
+      <div class=" border border-2 border-blue-100 p-5">
+        <img src="./images/image1.jpg" alt=""  width="300" height="300">
+      </div>
+    </div>
+    
+  </div>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

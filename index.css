@@ -61,3 +61,24 @@ div.active{
 .circle.coloured{
     background-color: #46afd7;
 }
+.slide-show{
+    opacity: 1;
+}
+.hide{
+    opacity: 0;
+}
+.slide{
+    opacity: 1;
+    height: 40vh;
+    transition: all 3s ease-in-out;
+}
+.pic_frame{
+    max-height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('./images/image4.jpg');
+}
+.pic_frame img{
+    max-width: 100%;
+    max-height: auto;
+}
