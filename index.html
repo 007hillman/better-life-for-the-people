@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Life For All People</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- iframe for the hero-->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white">
+ 
+    <main >
+      <div >
+        <!-- Hero card -->
+        <div class="relative ">
+          <div class="absolute inset-x-0 bottom-0 h-1/2  "></div>
+          <div class="mx-0 max-w-full  ">
+            <div class="relative shadow-xl sm:overflow-hidden bg-gray-900">
+              
+              <div class="absolute inset-0">
+                <img class="h-full w-full object-cover" src="./images/image1.jpg" alt="People working on laptops" id="hero-image">
+                <div class="absolute inset-0 bg-gray-400 mix-blend-multiply"></div>
+              </div>
+              <header>
+                <div class="relative bg-transparent">
+                  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                      <a href="#">
+                        <span class="sr-only">Your Company</span>
+                        <div class="w-1/2 md:w-auto">
+                          <a class="text-gray-100 font-bold text-2xl" href="">
+                            Better life for all 
+                          </a>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="-my-2 -mr-2 md:hidden" onclick="displayMobileMenu()">
+                      <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500" aria-expanded="false">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Heroicon name: outline/bars-3 -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                      </button>
+                    </div>
+                    <nav class="hidden space-x-10 md:flex">
+                      <div class="relative" onclick="dropSolutions()">
+                        <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                        <button type="button" class="text-gray-100 group inline-flex items-center rounded-md bg-transparent text-base font-medium hover:text-red-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2" aria-expanded="false">
+                          <span>Contact us</span>
+                          <!--
+                            Heroicon name: mini/chevron-down
+            
+                            Item active: "text-gray-600", Item inactive: "text-gray-400"
+                          -->
+                          <svg class="text-gray-100 ml-2 h-5 w-5 group-hover:text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+            
+                        <!--
+                          'Solutions' flyout menu, show/hide based on flyout menu state.
+            
+                          Entering: "transition ease-out duration-200"
+                            From: "opacity-0 translate-y-1"
+                            To: "opacity-100 translate-y-0"
+                          Leaving: "transition ease-in duration-150"
+                            From: "opacity-100 translate-y-0"
+                            To: "opacity-0 translate-y-1"
+                        -->
+                        <div id="solutions_dropdown" class="absolute hidden focus:block z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
+                          <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                            <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+            
+                              <a href="#" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white sm:h-12 sm:w-12">
+                                  <!-- Heroicon name: outline/chat-bubble-bottom-center-text -->
+                                  <ion-icon name="mail-outline" class="text-2xl"></ion-icon>
+                                </div>
+                                <div class="ml-4">
+                                  <p class="text-base font-medium text-gray-900">Email</p>
+                                  <p class="mt-1 text-sm text-gray-500">Send us an email for a more professional outlook</p>
+                                </div>
+                              </a>
+            
+                              <a href="#" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white sm:h-12 sm:w-12">
+                                  <!-- Heroicon name: outline/chat-bubble-left-right -->
+                                  <ion-icon name="logo-whatsapp" class="text-2xl"></ion-icon>
+                                </div>
+                                <div class="ml-4">
+                                  <p class="text-base font-medium text-gray-900">WhatsApp</p>
+                                  <p class="mt-1 text-sm text-gray-500">For a casual exchange on our goals and what we do</p>
+                                </div>
+                              </a>
+            
+                              <a href="#" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white sm:h-12 sm:w-12">
+                                  <!-- Heroicon name: outline/question-mark-circle -->
+                                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                                  </svg>
+                                </div>
+                                <div class="ml-4">
+                                  <p class="text-base font-medium text-gray-900">Frequently Asked Questions</p>
+                                  <p class="mt-1 text-sm text-gray-500">Quickly get information based on questions asked by other people</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <a href="#" class="text-base font-medium text-gray-100 hover:text-red-400">About Us</a>
+            
+                      <a href="#" class="text-base font-medium text-gray-100 hover:text-red-400">Members</a>
+            
+                    </nav>
+                    <div class="hidden items-center justify-end md:hidden md:flex-1 lg:w-0">
+                      <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
+                      <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent dark-red px-4 py-2 text-base font-medium text-white shadow-sm hover:light-red ">Sign up</a>
+                    </div>
+                  </div>
+            
+                  <!--
+                    Mobile menu, show/hide based on mobile menu state.
+            
+                    Entering: "duration-200 ease-out"
+                      From: "opacity-0 scale-95"
+                      To: "opacity-100 scale-100"
+                    Leaving: "duration-100 ease-in"
+                      From: "opacity-100 scale-100"
+                      To: "opacity-0 scale-95"
+                  -->
+                  <div class="mobile_menu absolute hidden inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden">
+                    <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div class="px-5 pt-5 pb-6">
+                        <div class="flex items-center justify-between">
+                          <div>
+                            <img class="h-8 w-auto" src="" alt="">
+                            logo
+                          </div>
+                          <div class="-mr-2">
+                            <button type="button" onclick="displayMobileMenu()" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                              <span class="sr-only">Close menu</span>
+                              <!-- Heroicon name: outline/x-mark -->
+                              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="mt-6">
+                          <nav class="grid grid-cols-1 gap-7">
+            
+                            <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                              <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white">
+                                <!-- Heroicon name: outline/chat-bubble-bottom-center-text -->
+                                  <ion-icon name="mail-outline" class="text-2xl"></ion-icon>
+                              </div>
+                              <div class="ml-4 text-base font-medium text-gray-900">Email us</div>
+                            </a>
+            
+                            <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                              <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white">
+                                <!-- Heroicon name: outline/chat-bubble-left-right -->
+                                <ion-icon name="logo-whatsapp" class="text-2xl"></ion-icon>
+                              </div>
+                              <div class="ml-4 text-base font-medium text-gray-900">Let&#039;s chat WhatsApp</div>
+                            </a>
+            
+                            <a href="#" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                              <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white">
+                                <!-- Heroicon name: outline/question-mark-circle -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                                </svg>
+                              </div>
+                              <div class="ml-4 text-base font-medium text-gray-900">FAQ</div>
+                            </a>
+                          </nav>
+                        </div>
+                      </div>
+                      <div class="py-6 px-5">
+                        <div class="grid grid-cols-2 gap-4 ">
+                          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">About us</a>
+            
+                          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Partners</a>
+            
+                        </div>
+                        <div class="mt-6">
+                          <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent dark-red px-4 py-2 text-base font-medium text-white shadow-sm hover:light-red">Sign up</a>
+                          <p class="mt-6 text-center text-base font-medium text-gray-500">
+                            Existing member?
+                            <a href="#" class="text-gray-900">Sign in</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            
+              <div class="hero-zone grid grid-cols-1 sm:grid-cols-5  relative ">
+                <div class="circle-buttons hidden md:flex flex-row md:flex-col items-start justify-center pl-6 ">
+                  <div class="circle-buttons-container flex flex-col justify-between   ">
+                    <div class="circular_button bg-gray-100 h-10 w-10 active" ></div>
+                    <div class="circular_button bg-gray-100  "></div>
+                    <div class="circular_button bg-gray-100  "></div>
+                  </div>
+                </div>
+                <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 sm:col-span-4 ">
+                  <h1 class="text-left text-4xl font-bold tracking-tight sm:text-5xl lg:text-8xl">
+                    <span class="block sm:w-2/3 hero-text" id="barner-text">A better life for the people</span>
+                  </h1>
+                  <span class=" inline-block mx-auto mt-6 max-w-2xl text-left text-xl text-indigo-100 sm:w-3xl ">
+                      “I have a very good life - I'm lucky enough not to be deprived.” “Life's good when it's lived for oneself; it's great when lived for others. ”
+                  </span>
+                  <div class="mx-auto mt-10 max-w-sm  sm:max-w-none  ">
+                    <div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-1 sm:gap-5 sm:space-y-0  ">
+                      <a href="#" class="flex items-start justify-start  border border-transparent light-red bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">Become a member</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Logo cloud -->
+        
+      </div>
+  
+      <!-- More main page content here... -->
+    </main>
+  </div>
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <div class="grid grid-cols-3 gap-5 ml-10">
+    <div class="pic py-16 flex  ">
+      <div class=" border border-2 border-blue-100 p-5">
+        <img src="./images/image3.jpg" alt=""  width="300" height="300">
+      </div>
+    </div>
+    <div class="bg-white col-span-2">
+      <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="text-left">
+          <span class="light-red text-white text-xs font-bold px-2 py-1 uppercase">Who we are</span>
+          <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-8">About better life for all </p>
+          <span class="mx-auto mt-5 max-w-xl text-xl text-gray-500">A  Better Life For The people is a nonprofit and social association was created in 2019 in Douala in conformity with the provisions of law N° 90/053 of December 1990 on Freedom of association...</span>
+
+          <div class="mt-10">
+            <button class="light-red px-8 py-2 text-gray-900">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="objectives">
+    <div class="grid grid-cols-3 grid-rows-3 gap-4">
+      <div class="row-span-2 col-span-1 px-10">
+        <span class="light-red text-white text-xs font-bold px-2 py-1">OBJECTIVES</span>
+        <h1 class="mt-1 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">Our objectives are pure and concise</h1>
+        <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-extralight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eos velit error voluptate nostrum cupiditate ut officiis doloremque eligendi provident! Ea voluptate consequuntur iure ullam nulla distinctio maiores aut perferendis?</p>
+      </div>
+      <div class="col-span-2 row-span-3">
+        <div class=" grid grid-cols-2 gap-4">
+          <div class="flex flex-row  gap-4">
+            <span class="stroke-1 text-5xl font-black text-light-red">
+              <ion-icon name="medkit-outline" style="--ionicon-stroke-width : 64px;"></ion-icon>
+            </span>
+            <div>
+              <h1 class="text-3xl text-gray-900 font-medium">Health care facilities</h1>
+              <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-light">We help improve health care facilities in rural communities so as to promote social welfare </p>
+            </div>
+          </div>
+          <div class="flex flex-row  gap-4">
+            <span class="stroke-1 text-5xl font-black text-light-red">
+              <ion-icon name="hammer-outline" style="--ionicon-stroke-width : 64px;"></ion-icon>
+            </span>
+            <div>
+              <h1 class="text-3xl text-gray-900 font-medium">Youth Vocations</h1>
+              <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-light">We encourage the youths to take up vocations in health domain through seminars, conferences and workshops </p>
+            </div>
+          </div>
+          <div class="flex flex-row  gap-4">
+            <span class="stroke-1 text-5xl font-black text-light-red">
+              <ion-icon name="book-outline" style="--ionicon-stroke-width : 64px;"></ion-icon>
+            </span>
+            <div>
+              <h1 class="text-3xl text-gray-900 font-medium">Education</h1>
+              <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-light">To promote education especially in health sector through capacity building and material support </p>
+            </div>
+          </div>
+          <div class="flex flex-row  gap-4">
+            <span class="stroke-1 text-5xl font-black text-light-red">
+              <ion-icon name="medkit-outline" style="--ionicon-stroke-width : 64px;"></ion-icon>
+            </span>
+            <div>
+              <h1 class="text-3xl text-gray-900 font-medium">Assist the needy</h1>
+              <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-light">We assist the destitute by providing them with basic necessities such as clothes and food</p>
+            </div>
+          </div>
+          <div class="flex flex-row  gap-4">
+            <span class="stroke-1 text-5xl font-black text-light-red">
+              <ion-icon name="people-outline" style="--ionicon-stroke-width : 64px;"></ion-icon>
+            </span>
+            <div>
+              <h1 class="text-3xl text-gray-900 font-medium">Collaboration</h1>
+              <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-light">We collaborate with associations with similar objectives for the improvement of the health of the needy, the down trodden and the poor</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="team-section mt-20">
+    <div class="grid grid-cols-3 gap-4">
+
+      <div class="col-span-2 flex flex-col picture-display">
+        <div class=" grid grid-cols-3"  id="display-zone">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div class="hidden">4</div>
+          <div class="hidden">5</div>
+        </div>
+        <div class=" flex justify-center">
+          <div class=" flex justify-between w-20"  id="circle-zone">
+          </div>
+        </div>
+      </div>
+      <div class="row-span-2 col-span-1 px-10">
+        <span class="light-blue text-white text-xs font-bold px-2 py-1 uppercase">meet the team</span>
+        <h1 class="mt-1 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">Meet the experts behind this foundation</h1>
+        <p class="mx-auto mt-5 max-w-xl text-xl text-gray-700 font-extralight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, eos velit error voluptate nostrum cupiditate ut officiis doloremque eligendi provident!</p>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
