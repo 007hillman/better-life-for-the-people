@@ -92,3 +92,9 @@ div.active{
     max-height: 365px;
     width: 100%;
 }
+input[placeholder], textarea[placeholder]{
+    padding-left: 10px;
+}
+textarea[placeholder]{
+    padding-top: 10px;
+}
