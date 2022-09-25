@@ -29,10 +29,10 @@
 }
 .hero-text{
 	-webkit-text-stroke: 1px #fff;
-    color: transparent;
-    background-image: linear-gradient(#fff,#fff);
+    color: #fff;
+    /* background-image: linear-gradient(#fff,#fff);
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; */
     background-position: 0 0;
     animation: backcolor 5s ease-in 1s 1 ;
 }
