@@ -38,9 +38,9 @@
 }
 
 @keyframes backcolor {
-    100%{
+    /* 100%{
         background-position: -1000px 0;
-    }
+    } */
 }
 .circle-buttons .circle-buttons-container{
     height: 150px;
