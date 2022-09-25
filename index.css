@@ -33,7 +33,7 @@
     /* background-image: linear-gradient(#fff,#fff);
     background-repeat: no-repeat;
     -webkit-background-clip: text; */
-    background-position: 0 0;
+    /*background-position: 0 0;*/
     animation: backcolor 5s ease-in 1s 1 ;
 }
 
