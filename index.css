@@ -28,7 +28,7 @@
     color: #46afd7;
 }
 .hero-text{
-	-webkit-text-stroke: 1px #fff;
+	/*-webkit-text-stroke: 1px #fff;*/
     color: #fff;
     /* background-image: linear-gradient(#fff,#fff);
     background-repeat: no-repeat;
