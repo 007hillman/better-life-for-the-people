@@ -37,7 +37,7 @@
                         <span class="sr-only">Your Company</span>
                         <div class="w-1/2 md:w-auto">
                           <a class="text-gray-100 font-bold text-2xl" href="">
-                            Better life for all 
+                            <img src="./images/logo.png" alt="" height="30px" width="200px" class="logo-image">
                           </a>
                         </div>
                       </a>
@@ -52,7 +52,7 @@
                       </button>
                     </div>
                     <nav class="hidden space-x-10 md:flex">
-                      <div class="relative" onclick="dropSolutions()">
+                      <div class="relative" onmouseover="dropSolutions()">
                         <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                         <button type="button" class="text-gray-100 group inline-flex items-center rounded-md bg-transparent text-base font-medium hover:text-red-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2" aria-expanded="false">
                           <span>Contact us</span>
@@ -76,22 +76,22 @@
                             From: "opacity-100 translate-y-0"
                             To: "opacity-0 translate-y-1"
                         -->
-                        <div id="solutions_dropdown" class="absolute hidden focus:block z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
-                          <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div id="solutions_dropdown" onmouseover="dropSolutions()" class="absolute hidden focus:block z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
+                          <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5" onmouseleave="dropSolutions()">
                             <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
             
-                              <a href="#" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                              <a href="#contact-section" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                 <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white sm:h-12 sm:w-12">
                                   <!-- Heroicon name: outline/chat-bubble-bottom-center-text -->
                                   <ion-icon name="mail-outline" class="text-2xl"></ion-icon>
                                 </div>
                                 <div class="ml-4">
-                                  <p class="text-base font-medium text-gray-900">Email</p>
+                                  <p class="text-base font-medium text-gray-900" >Email</p>
                                   <p class="mt-1 text-sm text-gray-500">Send us an email for a more professional outlook</p>
                                 </div>
                               </a>
             
-                              <a href="#" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                              <a href="#contact-section" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                 <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white sm:h-12 sm:w-12">
                                   <!-- Heroicon name: outline/chat-bubble-left-right -->
                                   <ion-icon name="logo-whatsapp" class="text-2xl"></ion-icon>
@@ -102,7 +102,7 @@
                                 </div>
                               </a>
             
-                              <a href="#" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                              <a href="#contact-section" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                 <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md light-red text-white sm:h-12 sm:w-12">
                                   <!-- Heroicon name: outline/question-mark-circle -->
                                   <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -119,14 +119,14 @@
                         </div>
                       </div>
           
-                      <a href="#" class="text-base font-medium text-gray-100 hover:text-red-400">About Us</a>
+                      <a href="#about-section" class="text-base font-medium text-gray-100 hover:text-red-400">About Us</a>
             
-                      <a href="#" class="text-base font-medium text-gray-100 hover:text-red-400">Members</a>
+                      <a href="#membership-section" class="text-base font-medium text-gray-100 hover:text-red-400">Members</a>
             
                     </nav>
                     <div class="hidden items-center justify-end md:hidden md:flex-1 lg:w-0">
-                      <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-                      <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent dark-red px-4 py-2 text-base font-medium text-white shadow-sm hover:light-red ">Sign up</a>
+                      <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 hidden">Sign in</a>
+                      <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent dark-red px-4 py-2 text-base font-medium text-white shadow-sm hover:light-red hidden">Sign up</a>
                     </div>
                   </div>
             
@@ -145,8 +145,8 @@
                       <div class="px-5 pt-5 pb-6">
                         <div class="flex items-center justify-between">
                           <div>
-                            <img class="h-8 w-auto" src="" alt="">
-                            logo
+                            <img class="h-8 w-auto" src="./images/logo.png" alt="Company logo" width="200" height="30" class="logo-image">
+                            
                           </div>
                           <div class="-mr-2">
                             <button type="button" onclick="displayMobileMenu()" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
@@ -191,16 +191,16 @@
                       </div>
                       <div class="py-6 px-5">
                         <div class="grid grid-cols-2 gap-4 ">
-                          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">About us</a>
+                          <a href="#about-us" class="text-base font-medium text-gray-900 hover:text-gray-700">About us</a>
             
-                          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Partners</a>
+                          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700 hidden">Partners</a>
             
                         </div>
                         <div class="mt-6">
-                          <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent dark-red px-4 py-2 text-base font-medium text-white shadow-sm hover:light-red">Sign up</a>
-                          <p class="mt-6 text-center text-base font-medium text-gray-500">
+                          <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent dark-red px-4 py-2 text-base font-medium text-white shadow-sm hover:light-red hidden">Sign up</a>
+                          <p class="mt-6 text-center text-base font-medium text-gray-500 hidden">
                             Existing member?
-                            <a href="#" class="text-gray-900">Sign in</a>
+                            <a href="#" class="text-gray-900 hidden">Sign in</a>
                           </p>
                         </div>
                       </div>
@@ -219,14 +219,14 @@
                 </div>
                 <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8 sm:col-span-4 ">
                   <h1 class="text-left text-4xl font-bold tracking-tight sm:text-5xl lg:text-8xl">
-                    <span class="block sm:w-2/3 hero-text" id="barner-text">A better life for the people</span>
+                    <span class="block sm:w-2/3 hero-text" id="barner-text"><img src="" alt="company logo"></span>
                   </h1>
                   <span class=" inline-block mx-auto mt-6 max-w-2xl text-left text-xl text-indigo-100 sm:w-3xl ">
                       “I have a very good life - I'm lucky enough not to be deprived.” “Life's good when it's lived for oneself; it's great when lived for others. ”
                   </span>
                   <div class="mx-auto mt-10 max-w-sm  sm:max-w-none  ">
                     <div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-1 sm:gap-5 sm:space-y-0  ">
-                      <a href="#" class="flex items-start justify-start  border border-transparent light-red bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">Become a member</a>
+                      <a href="#teams-section" class="flex items-center justify-center  border border-transparent light-red bg-opacity-60 px-4 py-3 text-base text-center font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">View our team</a>
                     </div>
                   </div>
                 </div>
@@ -243,7 +243,7 @@
     </main>
   </div>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class=" grid grid-cols-1 md:grid-cols-3 h-full gap-5 ml-10">
+  <div class=" grid grid-cols-1 md:grid-cols-3 h-full gap-5 mx-10" id="about-section">
     <div class="pic py-16 flex  row-start-2 md:row-start-1">
       <div class=" border border-2 border-blue-100 p-5">
         <img src="./images/image3.jpg" alt=""  width="300" height="300">
@@ -322,7 +322,7 @@
       </div>
     </div>
   </section>
-  <section class="team-section mt-20 mx-10">
+  <section class="team-section mt-20 mx-10" id="teams-section">
     <div class="grid grid-cols-1 md:grid-cols-3  gap-4 ">
 
       <div class="sm:col-span-2 row-span-3 flex flex-col picture-display">
@@ -338,42 +338,42 @@
           <div class=" relative team-member">
 
             <div class=" h-48  relative">
-              <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+              <img src="./images/image3.jpg" alt="" class="h-full" width="100%" height="50%">
             </div>
             <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
-            <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+            <div class="post text-center text-lg font-light text-gray-700 ">Manager</div>
         </div>
         <div class=" relative team-member">
 
           <div class=" h-48  relative">
             <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
           </div>
-          <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
+          <div class="name text-center font-semibold pt-2">Ayuk</div>
           <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
       </div>
       <div class=" relative team-member">
 
         <div class=" h-48  relative">
-          <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+          <img src="./images/image2.jpg" alt="" class="h-full" width="100%" height="50%">
         </div>
-        <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
-        <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+        <div class="name text-center font-semibold pt-2">Hillman </div>
+        <div class="post text-center text-lg font-light text-gray-700 ">Intern</div>
     </div>
     <div class=" relative team-member">
 
       <div class=" h-48  relative">
-        <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+        <img src="./images/image1.jpg" alt="" class="h-full" width="100%" height="50%">
       </div>
       <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
-      <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+      <div class="post text-center text-lg font-light text-gray-700 ">HR director</div>
   </div>
   <div class=" relative team-member">
 
     <div class=" h-48  relative">
-      <img src="./images/image4.jpg" alt="" class="h-full" width="100%" height="50%">
+      <img src="./images/image0.jpg" alt="" class="h-full" width="100%" height="50%">
     </div>
-    <div class="name text-center font-semibold pt-2">Hillman Ayuk</div>
-    <div class="post text-center text-lg font-light text-gray-700 ">CEO</div>
+    <div class="name text-center font-semibold pt-2">Tataw Ayuk</div>
+    <div class="post text-center text-lg font-light text-gray-700 ">Cleaner</div>
 </div>
         </div>
         <!--end of slide palette storage-->
@@ -389,7 +389,7 @@
     </div>
   </section>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 h-full gap-5 ml-10">
+  <div class="grid grid-cols-1 md:grid-cols-3 h-full gap-5 ml-10" id="membership-section">
     <div class="bg-white col-span-2">
       <div class="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div class="text-left">
@@ -420,6 +420,7 @@
 
   <section class="events">
     <div class="flex flex-col items-center mx-5 sm:mx-10">
+      <span class="dark-red text-white text-xs font-bold px-2 py-1 uppercase">future plans</span>
       <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-8">Our Events</p>
       <div class="events-container grid  grid-cols-1 sm:grid-cols-2 gap-8 ">
         <div class=" border ">
@@ -467,7 +468,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-us flex flex-col items-center mx-4 mt-10 md:ml-20 md:mr-40 md:mt-20">
+  <section class="contact-us flex flex-col items-center mx-4 mt-10 md:ml-20 md:mr-40 md:mt-20" id="contact-section">
     <span class="light-blue text-white text-xs font-bold px-2 py-1 uppercase">get in touch</span>
     <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl mb-8 text-center">Contact us</p>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full">
@@ -527,8 +528,8 @@
     <div class="bg-gray-900 text-gray-200 grid grid-cols-1 md:grid-cols-4 px-10 mt-20">
       <div class=" py-10 pr-20 flex flex-col  justify-center">
         <h1 class=" font-semibold text-4xl"> <span class="text-green font-black">B</span>etter <span class="text-green font-black">L</span>ife</h1>
-        <h1 class="text-xl font-light">for the people</h1>
-        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </span>
+        <h1 class="text-xl font-light pb-4">for the people</h1>
+        <span class="text-sm font-bold"> Make a real difference in the life of the people. </span>
       </div>
       <div class="pt-10 pb-6">
         <h1 class="text-green font-semibold text-xl">Quick links</h1>
@@ -564,7 +565,11 @@
           </li>
         </ul>
       </div>
-      <div></div>
+      <div class="pt-10 pb-6">
+        <a href="#about-section">
+          <img src="./images/logo.png" alt=" company logo">
+        </a>
+      </div>
     </div>
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

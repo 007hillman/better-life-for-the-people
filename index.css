@@ -98,3 +98,7 @@ input[placeholder], textarea[placeholder]{
 textarea[placeholder]{
     padding-top: 10px;
 }
+.logo-image{
+    background-blend-mode:screen;
+    background: none;
+}
