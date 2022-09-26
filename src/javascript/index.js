@@ -30,8 +30,13 @@ setInterval(function changeImage(){
         button.classList.remove('active')
     })
     var img = document.getElementById('hero-image')
-    img.src = "./images/image" + ind%3 + ".jpg"
+    img.src = "../images/image" + ind%3 + ".jpg"
     document.getElementById('barner-text').innerText = text[ind%3]
     buttons[ind%3].classList.add('active')
     ind += 1
 },5000)
+
+function changePic(pic_name){
+    console.log(this)
+    console.log("hello")
+}
